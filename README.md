@@ -3,7 +3,13 @@
 
 "Boolean functions, also known as switching functions are named after the English mathematician George Boole (1815-1864). In 1854 with his publication of
 “An Investigation into the Laws of Thought”, Boole investigated the reasoning processes of the mind in mathematical language and he, in most simplistic
-terms, symbolized logic in terms of a new algebra."[1]
+terms, symbolized logic in terms of a new algebra.
+
+Cryptography offers a variety of scientific research areas, each of which possess
+its unique set of problems. In most of these areas, especially those related to
+symmetric-key cryptographic systems, it is often a common practice to make use
+of **Boolean functions** to devise, express and solve these problems
+"[1]
 
 ## Content:
 
@@ -26,4 +32,4 @@ These tables were referred in some parts of the following works:
 
 ### 📁 ___Reed-Muller_codes___
 
-to be committed...
+to be added...
