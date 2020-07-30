@@ -1,0 +1,38 @@
+body {scrollbar-face-color: #FFFFFF;
+    scrollbar-3dlight-color: #6DA4FF;
+    scrollbar-darkshadow-color:#ACA899;
+    scrollbar-arrow-color: #6DA4FF;
+    scrollbar-track-color:#FFFFFF;
+    background-color:WhiteSmoke
+    }
+    a {font-family: verdana; font-weight: bold; font-size: 10px; text-decoration: none; color: #232323;}
+    a:hover {text-decoration: underline; color: gray;border:1px solid gray}
+    table {border-collapse:collapse;}
+    table,th,td { border: 1px solid black;}
+    td {text-align:right;}
+    th.bjk { background-color:#303030;color:white}
+    th.mid { background-color:#909090;}
+    td.yok { background-color:#f7fff6;color:red}
+    td.tdpartition { background-color:#66ff99;}
+    td.tdbitflip { background-color:#72c67a;}
+    td.tdrand { background-color:#ffccff;}
+    td.tdapn { background-color:#cc66ff;color:white;}
+    td.tdconcat { background-color:#99ccff;}
+    td.tdproven { background-color:#ffbb00;}
+    td.zero { background-color:#ccccdd;}
+    td.dot { background-color:#99cccc;}
+    td.sum { background-color:#1133cc;color:white}
+    td.tdexceeds { background-color:#dcffe0}
+    td.type2 { background-color:#ffff99;}
+    td.type3 { background-color:#ffee33;}
+    td.type1 { background-color:#ffbb00;}
+    td.type4 { background-color:#ff9911;}
+    td.type5 { background-color:#ff9988;}
+    td.type6 { background-color:#ff7755;}
+    td.type7 { background-color:#ff5500;color:white;}
+    td.type8 { background-color:#ff0000;color:white;}
+    td.bent { background-color:#f04174;color:white;}
+    .title {position:absolute; left:10px; top:20px; width:760px; height:60px; z-index:1; border:2px dashed black; background-color: gray;}
+    .links	{font-family: Tahoma, Times New Roman, sans-serif;color: black;font-size:11px;line-height:170%}
+    .atable{font-family: verdana; font-size: 9px; color: #232323; font-weight: bold;}
+    .btable{font-family: verdana; font-size: 9px; color: #232323;}
