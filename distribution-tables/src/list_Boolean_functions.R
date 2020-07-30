@@ -12,7 +12,7 @@
 #   * Walsh Transform 
 # 
 #########
-library(boolfun)  # CRAN Repository -  "Cryptographic Boolean Functions With R, by F Lafitte et al, Royal Military Academy, The R Journal, Vol. 3 (1), 2011" [at] 'https://cran.r-project.org/web/packages/boolfun/index.html'
+library(boolfun)  # CRAN Repository -  "Cryptographic Boolean Functions With R, by F Lafitte et al., Royal Military Academy, The R Journal, Vol. 3 (1), 2011" [at] 'https://cran.r-project.org/web/packages/boolfun/index.html'
 
 for(i in 0:2^(2^n)-1){ #unfeasible loop for n>4 with R
     f<- BooleanFunction(toBin(i, 2^n))
