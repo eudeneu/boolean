@@ -1,0 +1,823 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	2^(2^n) functions - [Work In Progress]
+	<center>
+		<table class=atable>
+			<tr>
+				<td><a href="n7.htm">&lt;&lt;</a></td>
+				<th style="font-size:36px">&nbsp;n&nbsp;</th>
+				<td><a href="n1.htm">&gt;&gt;</a></td>
+			</tr>
+		</table>
+		<br />
+		<table width="60%" class="btable" style="border: thin solid black;">
+			<tr>
+				<th> s \ |w| </th>
+				<th> 0 </th>
+				<th> 2 </th>
+				<th> 4 </th>
+				<th> .. </th>
+				<th> .. </th>
+				<th> 2<sup>(n/2)</sup> </th>
+				<th> .. </th>
+				<th> 2<sup>n-1</sup>-2 </th>
+				<th class=mid> 2<sup>n-1</sup> </th>
+				<th class=bjk> ... </th>
+				<th class=bjk> ... </th>
+				<th class=bjk> ... </th>
+				<th class=bjk> ... </th>
+				<th class=bjk> 2<sup>n</sup>-2k </th>
+				<th class=bjk> ... </th>
+				<th class=bjk> ... </th>
+				<th class=bjk> 2<sup>n</sup>-4 </th>
+				<th class=bjk> 2<sup>n</sup>-2 </th>
+				<th class=bjk> 2<sup>n</sup></th>
+			</tr>
+			<tr>
+				<th> 0 </th>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+				<td class=zero> .. </td>
+			</tr>
+			<tr>
+				<th> 1 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=type2> .. </td>
+				<td class=type2> .. </td>
+				<td class=type2> .. </td>
+				<td class=type2> .. </td>
+				<td class=type2> .. </td>
+				<td class=type2> C[2<sup>n</sup>,k]2<sup>n+1</sup> </td>
+				<td class=type2> .. </td>
+				<td class=type2> .. </td>
+				<td class=type2> C[2<sup>n</sup>,2]2<sup>n+1</sup> </td>
+				<td class=type2> C[2<sup>n</sup>,1]2<sup>n+1</sup> </td>
+				<td class=type2> 2<sup>n+1</sup> </td>
+			</tr>
+			<tr>
+				<th> 2 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=type2> .. </td>
+				<td class=tdbitflip> 0 </td>
+				<td class=tdbitflip> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 3 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=yok> 0 </td>
+				<td class=tdbitflip> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 4 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=type2> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 5 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> .. </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> .. </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> .. </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> .. </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> .. </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> .. </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-20 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-19 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-18 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-17 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-16 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-15 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-14 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-13 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-12 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-11 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-10 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-9 </th>
+				<td> 0 (?) </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-8 </th>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-7 </th>
+				<td class=yok> 0 </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-6 </th>
+				<td class=yok> 0 </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-5 </th>
+				<td class=yok> 0 </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-4 </th>
+				<td class=type2> .. </td>
+				<td class=type2> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-3 </th>
+				<td class=yok> 0 </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-2 </th>
+				<td class=yok> 0 </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup>-1 </th>
+				<td class=type2> 2<sup>n+1</sup> </td>
+				<td class=type2> 2<sup>2n+1</sup> </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td> .. </td>
+				<td class=tdpartition> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> 2<sup>n</sup> </th>
+				<td class=tdpartition> 0 </td>
+				<td class=tdpartition> 0 </td>
+				<td class=tdpartition> 0 </td>
+				<td class=tdpartition> 0 </td>
+				<td class=tdpartition> 0 </td>
+				<td class=bent> <a href=https://oeis.org/A004491>***</a></td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+				<td class=tdexceeds> 0 </td>
+			</tr>
+			<tr>
+				<th> Total f </th>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+				<td class=sum> # </td>
+			</tr>
+		</table>
+		<!-----------------------legend---------------------->
+		<table class="atable" style="font-weight: bold;">
+			<tr>
+				<td class=tdexceeds width=50>&nbsp;</td>
+				<td>0 by Parseval Identity (Exceeder)</td>
+			</tr>
+			<tr>
+				<td class=tdbitflip width=50>&nbsp;</td>
+				<td>0 by Bitflip Effect</td>
+			</tr>
+			<tr>
+				<td class="tdpartition" width="50">&nbsp;</td>
+				<td>0 by Parseval (No such partition)</td>
+			</tr>
+			<tr>
+				<td class=bent width=50>&nbsp;</td>
+				<td>Bent functions</td>
+			</tr>
+			<tr>
+				<td width=50>(?)</td>
+				<td>Conjecture</td>
+			</tr>
+			<tr>
+				<td class=yok width=50>0</td>
+				<td>proved in [1]</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>
