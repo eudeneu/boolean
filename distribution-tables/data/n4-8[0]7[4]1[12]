@@ -1,4 +1,4 @@
-#!/usr/bin/env python3  #Github languages algorithm 🤦
+#!/usr/bin/env python3
 data="""
           Truth Table                                  ANF               DEG     NL    CI     AI
 -------------------------------      -------------------------------     ---    ---    ---    ---
