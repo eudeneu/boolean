@@ -13,7 +13,7 @@ of **Boolean functions** to devise, express and solve these problems
 
 ## Content:
 
-### 📁 ___distribution-tables___
+### 📁 ___docs/distribution-tables___
 
 Tables showing \# of n-variable Boolen functions distributed w.r.t. Walsh coefficients
 
