@@ -15,6 +15,8 @@ of **Boolean functions** to devise, express and solve these problems
 
 ### 📁 ___docs/distribution-tables___
 
+https://sudoeu.github.io/boolean/
+
 Tables showing \# of n-variable Boolen functions distributed w.r.t. Walsh coefficients
 
 * **ω**: Walsh coefficient value
