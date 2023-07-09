@@ -15,7 +15,7 @@ of **Boolean functions** to devise, express and solve these problems
 
 ### 📁 ___docs/distribution-tables___
 
-https://sudoeu.github.io/boolean/
+https://eudeneu.github.io/boolean/
 
 Tables showing \# of n-variable Boolen functions distributed w.r.t. Walsh coefficients
 
@@ -30,8 +30,3 @@ These tables were referred in some parts of the following works:
 [2]Uyan,E. and Doganaksoy,A., 2013, September. Distribution of Boolean Functions of 6 Variables According to the Frequency of Walsh Coefficients. In 6th International Information Security & Cryptology Conference, ISC Turkey.
 
 [3]Uyan,E., Calik,C. and Doganaksoy,A., 2014. Counting Boolean functions with specified values in their Walsh spectrum. Journal of Computational and Applied Mathematics, 259, pp.522-528.
-
-
-### 📁 ___Reed-Muller_codes___
-
-to be added...
